@@ -1,4 +1,3 @@
-export 'menu_option.dart';
-export 'character.dart';
-export 'location.dart';
-export 'episode.dart';
+export 'heroe.dart';
+export 'id_multimedia.dart';
+export 'multimedia.dart';
