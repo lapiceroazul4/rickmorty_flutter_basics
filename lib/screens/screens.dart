@@ -3,3 +3,7 @@ export 'package:test_app/screens/card.dart';
 export 'package:test_app/screens/listview1_screen.dart';
 export 'package:test_app/screens/listview2_screen.dart';
 export 'package:test_app/screens/homepage.dart';
+export 'package:test_app/screens/characters_screen.dart';
+export 'package:test_app/screens/locations_screen.dart';
+export 'package:test_app/screens/episodes_screen.dart';
+export 'package:test_app/screens/search_location_screen.dart';

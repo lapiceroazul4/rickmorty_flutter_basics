@@ -13,6 +13,31 @@ class AppRouter {
       icon: Icons.home,
     ),
     MenuOption(
+      route: 'characters',
+      name: 'Characters',
+      screen: const CharactersScreen(),
+      icon: Icons.person,
+    ),
+    MenuOption(
+      route: 'locations',
+      name: 'Locations',
+      screen: const LocationsScreen(),
+      icon: Icons.place,
+    ),
+    MenuOption(
+      route: 'episodes',
+      name: 'Episodes',
+      screen: const EpisodesScreen(),
+      icon: Icons.movie,
+    ),
+    MenuOption(
+      route: 'search_location',
+      name: 'Search Location',
+      screen: const SearchLocationScreen(),
+      icon: Icons.search,
+    ),
+    // puedes dejar las otras que ya tenías
+    MenuOption(
       route: 'listview1',
       name: 'List View Tipo 1',
       screen: const Listview1Screen(),
@@ -47,14 +72,6 @@ class AppRouter {
 
     return appRoutes;
   }
-
-  static Map<String, Widget Function(BuildContext)> routes = {
-    'home': (BuildContext context) => const HomePage(),
-    'alert': (BuildContext context) => const AlertScreen(),
-    'card': (BuildContext context) => const CardScreen(),
-    'listview1': (BuildContext context) => const Listview1Screen(),
-    'listview2': (BuildContext context) => const Listview2Screen(),
-  };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(
